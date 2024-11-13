@@ -1,0 +1,55 @@
+/* Background and Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://media.defense.gov/2024/Oct/03/2003558668/2000/2000/0/241003-D-AF999-9001.JPG') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    color: #fff;  /* Change text color to white for better visibility */
+}
+
+h1 {
+    color: #ff6347;
+    text-shadow: 2px 2px 4px #000; /* Add shadow for better visibility */
+    margin-bottom: 20px;
+}
+
+/* Pokémon Grid Layout */
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four cards per row */
+    gap: 20px;  /* Space between the cards */
+    max-width: 1200px; /* Center the grid on larger screens */
+    width: 100%;
+}
+
+/* Card Styles */
+.card {
+    background-color: rgba(200, 97, 226,0.5); /* Slight transparency to show background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.06); /* Slight zoom effect on hover */
+}
+
+.card img {
+    width: 150px;  /* Increase size of Pokémon image */
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#loading {
+    display: none;
+    margin: 20px;
+    font-size: 18px;
+    color: #ff6347;
+    text-shadow: 2px 2px 4px #000; /* Shadow for better visibility */
+}
