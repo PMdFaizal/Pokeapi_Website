@@ -52,13 +52,5 @@ async function renderPokemonCards(limit) {
 window.addEventListener('load', () => {
     renderPokemonCards(limit);
 });
-// Infinite scroll event listener
-window.addEventListener('scroll', () => {
-    const limit = 20; // Number of Pokémon to fetch each time
 
-    // Check if the user has scrolled near the bottom of the page
-    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 500 && !isLoading) {
-        renderPokemonCards(limit);
-    }
-});
 
